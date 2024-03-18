@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="elem">
+      ENGALURU: India’s biggest rocket — parts of which will be reusable —
+      critical to building the country’s own space station and eventually
+      sending Indians to Moon, is not just on paper anymore. After several
+      months of initial planning and finalising of design and architecture, Isro
+      has formalised a project team to start building the New Generation Launch
+      Vehicle (NGLV), which will also require a new launch pad at the spaceport
+      in Sriharikota.
+    </p>
+<script>
+
+   const element =     document.getElementById('elem');
+
+    function toggleColor(iscolor){
+
+        element.style.background = iscolor ? 'orange' : 'yellow'
+    }
+
+
+    element.addEventListener('mouseover', () => toggleColor(true))
+    element.addEventListener('mouseleave',()=>  toggleColor(false))
+</script>
+
+  </body>
+</html>

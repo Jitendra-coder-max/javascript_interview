@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Circle</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    #circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: black;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="circle"></div>
+  <script>
+    const circle = document.getElementById('circle');
+
+    function toggleColor(isEntering) {
+      circle.style.backgroundColor = isEntering ? 'orange' : 'black';
+    }
+
+    circle.addEventListener('mouseenter', () => toggleColor(true));
+    circle.addEventListener('mouseleave', () => toggleColor(false));
+  </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button type="button" id="button">0</button>
+
+    <script>
+     
+//       let button = document.getElementById('button')
+// let count = 0;
+// const increment = () => {
+// count++
+// button.innerHTML = count;
+// }
+
+
+//               button.addEventListener('click',increment)
+     
+const a = function(){
+    console.log(this);
+    console.log(1)
+  
+    const b = {
+      func1: function(){
+        console.log(this);
+        console.log(2)
+      }  
+    }
+  
+    const c = {
+      func2: ()=>{
+        console.log(this);
+        console.log(3)
+      }
+    }
+  
+    b.func1();
+    c.func2();
+  }
+  
+  a();
+  
+
+    </script>
+    
+
+
+
+</body>
+</html>
