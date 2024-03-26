@@ -952,6 +952,383 @@
 // main(); // A,C and B
 
 
+// var y = 1;
+// if (function f() { }) {
+//     y += typeof f;
+// }
+// // console.log(y);
+// console.log(typeof f)
+
+
+// var car = new Vehicle("Honda", "white", "2010", "UK");
+// console.log(car);
+
+// function Vehicle(model, color, year, country) {
+//     this.model = model;
+//     this.color = color;
+//     this.year = year;
+//     this.country = country;
+// }
+
+// function Vehicle(model, color, year, country) {
+//     this.model = model;
+//     this.color = color;
+//     this.year = year;
+//     this.country = country;
+// }
+
+// var car = Vehicle("Honda", "white", "2010", "UK");
+// console.log(car);
+
+
+
+
+// function foo() {
+//     return {
+//         message: "Hello World"
+//     };
+// }
+// console.log(foo()); //Undefined
+
+
+// const array = [10, 20, 30, 40];
+// const result = array.map((num) => num / 2).filter((num) => num >= 15);
+// console.log(result);
+
+
+// let counter = 0;
+// for (var i = 1; i <= 10; i++) {
+//     counter += i;
+// }
+// console.log(counter);
+// console.log(i);
+
+
+// const object1 = {
+//     a: 10,
+//     b: 20,
+//     c: function () {
+//         console.log(this.a + this.b);
+//     },
+// };
+// const func = object1.c;
+// func();
+
+
+// function greetHello(name) {
+//     return `Hello, ${name}!`;
+// }
+// console.log(greetHello("Brian"));
+
+
+
+
+// function fetchData(callback) {
+//     fetch('https://api.example.com/data')
+//         .then(response => response.json())
+//         .then(data => callback(null, data))
+//         .catch(error => callback(error));
+// }
+// fetchData(function (error, data) {
+//     if (error) {
+//         console.log('Error:', error);
+//     } else {
+//         console.log('Data:', data);
+//     }
+// });
+
+
+// setTimeout(function () {
+//     console.log("This will be executed after 3 seconds");
+// }, 3000);
+// clearTimeout();
+
+// const testArray = [1, 2, 3];
+// testArray = [4, 5, 6];
+// console.log(testArray);
+
+
+// const fetchData = async () => {
+//     const response = await fetch("https://api.samplewebsite.com/data");
+//     const data = await response.json();
+//     console.log(data);
+// };
+
+// fetchData();
+
+
+
+// const promise1 = Promise.resolve("One");
+// const promise2 = new Promise((resolve) => setTimeout(() => resolve("Two"), 1000));
+// const promise3 = Promise.reject("Three");
+// Promise.allSettled([promise1, promise2, promise3]).then((results) => console.log(results));
+
+// const obj = {
+//     name: "Conner",
+//     age: 27,
+//     greet: () => {
+//         console.log(`Hey, my name is ${this.name}`);
+//     },
+// };
+// obj.greet();
+
+
+
+// const object1 = {
+//     prop1: "value1",
+//     prop2: {
+//         prop3: "value3",
+//     },
+// };
+// const newObj = { ...object1 };
+// newObj.prop2.prop3 = "newValue3";
+
+// console.log(object1.prop2.prop3);
+
+
+// class Bird {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     speak() {
+//         console.log(`${this.name} makes a noise.`);
+//     }
+// }
+// class Crow extends Bird {
+//     speak() {
+//         super.speak();
+//         console.log(`${this.name} sings.`);
+//     }
+// }
+// const crow = new Crow("Tim");
+// crow.speak();
+
+
+
+
+
+
+// const arr = [1, 2, 3, 4, 5];
+// const sum = arr.reduce((total, num) => total + num);
+// console.log(sum / arr.length);
+
+
+// const testArray = [1, 2, 3, 4, 5];
+// const res = testArray.reduce((acc, curr) => {
+//     if (curr % 2 === 0) {
+//         return acc + curr;
+//     }
+//     return acc;
+// }, 0);
+// console.log(res);
+
+
+
+// const arr = [];
+// for (let i = 0; i < 1000000; i++) {
+//     arr.push(Math.floor(Math.random() * 1000));
+// }
+
+// const arr = [1, 2, 3];
+// const object1 = { x: 1, y: 2, z: 3 };
+// console.log([...arr, ...object1]); // Object is not iterable
+
+
+// const promise1 = Promise.resolve('One');
+// const promise2 = Promise.resolve('Two');
+// Promise.all([promise1, promise2]).then(([result1, result2]) => console.log(result1 + ' ' + result2));
+
+
+// function counter() {
+//     let count = 0;
+//     return function () {
+//         count++;
+//         console.log(count);
+//     }
+// }
+// const increment = counter();
+// increment(); // 1
+// increment(); // 2
+// increment(); // 3
+
+
+
+// let x = false;
+// let y = "0";
+// let z = 0;
+
+// console.log(x == y);
+// console.log(x == z);
+
+
+// let x = 5;
+// let y = '2';
+
+// console.log( typeof(x + y));
+// console.log( typeof(x - y)); 
+// console.log(x*y)
+
+
+// let x = false;
+// let y = !x;
+
+// console.log(y); 
+
+
+// let x = 1;
+// let y = "1";
+
+// console.log(++x, ++y); 
+// console.log(x++, y++)
+
+
+// let x = [2];
+// let y = [2];
+
+// console.log(x[0] === y[0]); 
+
+
+
+// let x = [1, 2, 3, 5];
+
+// x.forEach((e) => {
+//     if (e > 2 && e < 5) return;
+//     console.log(e);
+// }); 
+
+
+// let x = 10;
+// let y = 20;
+
+// console.log( "total = " + x + y); 
+
+
+
+
+// const arr = [1, 2, 3];
+// arr.forEach((num) => num * 2);
+
+// console.log(arr);
+
+
+
+
+
+// let x = 1;
+
+// console.log(x + x++); 
+
+
+// var arr1 = "john".split('');
+// // console.log(arr1.length)
+// console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+
+
+
+// var arr1 = "john".split('');
+// var arr2 = arr1.reverse();
+// var arr3 = "jones".split('');
+// arr2.push(arr3);
+// console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+// console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
+// console.log(arr1)
+// console.log(arr2)
+
+
+// console.log(1 + "2" + "2"); //122
+// console.log(1 + +"2" + "2");//32
+// console.log(1 + -"1" + "2"); //02
+// console.log(+"1" + "1" + "2");//112
+// console.log("A" - "B" + "2");// NaN2
+// console.log("A" - "B" + 2); //NaN
+
+
+
+// function sum() {
+//     let a = 8;
+//     const b = 2;
+//     var c = a + b;
+// }
+
+
+// sum()
+// console.log(c)
+
+
+// let count = 0;
+// (function immediate() {
+//     if (count === 0) {
+//         let count = 1;
+//         console.log(count); // What is logged?
+//     }
+//     console.log(count); // What is logged?
+// })();
+
+
+
+// function sum(a) {
+//     return function (b) {
+//         if (!b) {
+//             return a;
+//         }
+//         return sum(a + b);
+//     }
+// }
+// console.log(sum(1)(2)(3)(4)(5)(6)());
+
+
+// function debounce(func, delay) {
+//     let timeoutId;
+
+//     return function (...args) {
+//         const context = this;
+
+//         clearTimeout(timeoutId);
+
+//         timeoutId = setTimeout(() => {
+//             func.apply(context, args);
+//         }, delay);
+//     };
+// }
+
+// // Example usage:
+// function search() {
+//     console.log('Searching...');
+//     // Here you would put your actual search logic
+// }
+
+// const debouncedSearch = debounce(search, 3000);
+
+// // Call debouncedSearch when you want to trigger the search function
+// debouncedSearch();
+
+// function memoize(func) {
+//     const cache = {}; // Cache to store computed results
+
+//     return function (...args) {
+//         const key = JSON.stringify(args); // Generate a unique key based on function arguments
+
+//         if (!cache[key]) {
+//             cache[key] = func.apply(this, args); // Compute and cache the result if not already cached
+//         }
+
+//         return cache[key]; // Return the cached result
+//     };
+// }
+
+// // Example of a function to be memoized
+// function fibonacci(n) {
+//     if (n <= 1) return n;
+//     return fibonacci(n - 1) + fibonacci(n - 2);
+// }
+
+// // Memoize the fibonacci function
+// const memoizedFibonacci = memoize(fibonacci);
+
+// // Call the memoized function
+// console.log(memoizedFibonacci(10)); // Output: 55
+// console.log(memoizedFibonacci(5));  // Output: 5
+// console.log(memoizedFibonacci(10)); // Output: 55 (Retrieved from cache)
 
 
 
@@ -965,5 +1342,62 @@
 
 
 
+// Bubble sort Implementation using Javascript
+
+// // Creating the bblSort function
+// function bblSort(arr) {
+
+//     for (var i = 0; i < arr.length; i++) {
+
+//         // Last i elements are already in place  
+//         for (var j = 0; j < (arr.length - i - 1); j++) {
+
+//             // Checking if the item at present iteration 
+//             // is greater than the next iteration
+//             if (arr[j] > arr[j + 1]) {
+
+//                 // If the condition is true
+//                 // then swap them
+//                 var temp = arr[j]
+//                 arr[j] = arr[j + 1]
+//                 arr[j + 1] = temp
+//             }
+//         }
+//     }
+
+//     // Print the sorted array
+//     console.log(arr);
+// }
+
+// // This is our unsorted array
 
 
+function Bubble(arr){
+
+
+    let temp ;
+
+    for(let i = 0; i< arr.length; i++){
+        for(let j = i+1; j < arr.length; j++){
+
+
+            if(arr[i] > arr[j]){
+
+                temp = arr[i]; 
+                arr[i] = arr[j];
+                arr[j] = temp
+
+               
+            }
+        }
+    }
+    return arr;
+}
+
+
+
+
+var arr = [234, 43, 55, 63, 5, 6, 235, 547];
+
+
+console.log(Bubble(arr))
