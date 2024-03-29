@@ -135,19 +135,132 @@
 //     console.log( counter.decrement()); // 4
    
 
-class Counter {
-    constructor(n){
-        this.n = n;
-    }
+// class Counter {
+//     constructor(n){
+//         this.n = n;
+//     }
 
-    increment(){
-        return ++this.n;
-    }
-}
+//     increment(){
+//         return ++this.n;
+//     }
+// }
       
 
              
- const counter = new Counter(10);
+//  const counter = new Counter(10);
 
- console.log( counter.increment())
- console.log( counter.increment())
+//  console.log( counter.increment())
+//  console.log( counter.increment())
+
+
+// class createCounter {
+
+//     constructor(init){
+//         this.init = init;
+//         this.count = init;
+//     }
+
+//     increment(){
+//         return ++this.count;
+//     }
+//     decrement(){
+//         return --this.count;
+//     }
+
+//     reset(){
+//         this.count = this.init
+//         return this.count
+//     }
+
+    
+// }
+
+
+
+
+// const counter = new createCounter(5)
+//     console.log( counter.increment()); // 6
+//     console.log( counter.reset()); // 5
+//     console.log( counter.decrement()); // 4
+
+
+
+// function once(fn) {
+//     let called = false;
+//     let result;
+  
+//     return function(...args) {
+//       if (!called) {
+//         called = true;
+//         result = fn(...args);
+//         return result;
+//       } else {
+//         return undefined;
+//       }
+//     };
+//   }
+  
+//   // Example usage
+//   const fn = (a, b, c) => (a + b + c);
+//   const onceFn = once(fn);
+  
+//   console.log(onceFn(1, 2, 3)); // Output: 6
+//   console.log(onceFn(2, 3, 6)); // Output: undefined
+  
+// var once = function(fn) {
+//     let called = false;
+//     let result;
+//     return function(...args){
+//         if(!called){
+//             called = true;
+//             result = fn(...args)
+//             return result;
+//         }
+
+//         else {
+//             return undefined
+//         }
+        
+//     }
+// };
+
+
+//  let fn = (a,b,c) => (a + b + c)
+//  let onceFn = once(fn)
+ 
+// console.log( onceFn(1,2,3)); // 6
+// console.log(  onceFn(2,3,6)); // returns undefined without calling fn
+
+
+
+// /**
+//  * @param {Function} fn
+//  * @return {Function}
+//  */
+// function memoize(fn) {
+//     let cache = {}
+//     let callCount = 0;
+
+//     return function(...args) {
+
+//     const key = JSON.stringify(args);
+
+//     if(!cache[key]){
+//         cache[key] = fn.apply(this,args)
+//         callCount++;
+//     }  
+//        return cache[key];
+//     }
+// }
+
+
+
+//   let callCount = 0;
+//   const memoizedFn = memoize(function (a, b) {
+//  	 callCount += 1;
+//    return a + b;
+//  })
+//   console.log( memoizedFn(2, 3)) // 5
+//    console.log( memoizedFn(2, 3)) // 5
+//   console.log(callCount) // 1 
+ 
