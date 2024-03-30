@@ -46,7 +46,7 @@
 </head>
 <body>
     
-    <button type="button" id="button">0</button>
+    <!-- <button type="button" id="button">0</button> -->
 
     <script>
      
@@ -60,29 +60,54 @@
 
 //               button.addEventListener('click',increment)
      
-const a = function(){
-    console.log(this);
-    console.log(1)
+// const a = function(){
+//     console.log(this);
+//     console.log(1)
   
-    const b = {
-      func1: function(){
-        console.log(this);
-        console.log(2)
-      }  
-    }
+//     const b = {
+//       func1: function(){
+//         console.log(this);
+//         console.log(2)
+//       }  
+//     }
   
-    const c = {
-      func2: ()=>{
-        console.log(this);
-        console.log(3)
-      }
-    }
+//     const c = {
+//       func2: ()=>{
+//         console.log(this);
+//         console.log(3)
+//       }
+//     }
   
-    b.func1();
-    c.func2();
-  }
+//     b.func1();
+//     c.func2();
+//   }
   
-  a();
+//   a();
+
+function throttle(func, delay) {
+    let lastCall = 0;
+    
+    return function(...args) {
+        const now = new Date().getTime();
+        
+        if (now - lastCall >= delay) {
+            func.apply(this, args);
+            lastCall = now;
+        }
+    };
+}
+
+// Example usage:
+function handleScroll() {
+    console.log('Scrolling...');
+    // Here you would put your actual scroll handling logic
+}
+
+const throttledScroll = throttle(handleScroll, 300);
+
+// Attach throttledScroll as the event handler for scroll events
+window.addEventListener('scroll', throttledScroll);
+
   
 
     </script>

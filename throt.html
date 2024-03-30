@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <P></P>
+    <script>
+        function throttle(func, delay) {
+    let lastCall = 0;
+    
+    return function(...args) {
+        const now = new Date().getTime();
+        
+        if (now - lastCall >= delay) {
+            func.apply(this, args);
+            lastCall = now;
+        }
+    };
+}
+
+// Example usage:
+function handleScroll() {
+    console.log('Scrolling...');
+    // Here you would put your actual scroll handling logic
+}
+
+const throttledScroll = throttle(handleScroll, 300);
+
+// Attach throttledScroll as the event handler for scroll events
+window.addEventListener('scroll', throttledScroll);
+
+    </script>
+</body>
+</html>
