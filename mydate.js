@@ -88,11 +88,21 @@
 // console.log(timeDifference(date1, date2));
 
 
-function
-myFunction(set)
-{
+// function
+// myFunction(set)
+// {
 
-return [...set]
+// return [...set]
+// }
+
+// console.log(myFunction(new Set([1, 2, 3])))
+
+
+function printDigits(num) {
+    if (num > 0) {
+        printDigits(num - 1);
+        console.log(num);
+    }
 }
 
-console.log(myFunction(new Set([1, 2, 3])))
+printDigits(5);

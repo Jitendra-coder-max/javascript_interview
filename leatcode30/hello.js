@@ -264,3 +264,64 @@
 //    console.log( memoizedFn(2, 3)) // 5
 //   console.log(callCount) // 1 
  
+
+// Event Eitter
+
+// class EventEmitter{
+
+//            constructor(){
+//                 this.events = {}
+//            }
+
+//         subscribe(eventName,callback){
+                
+//                 if(!this.events[eventName]){
+//                         this.events[eventName] = []
+//                 }
+
+//                 this.events[eventName].push(callback)
+
+//            return {
+//                 unsubscribe: () => {
+
+//                     const indexId =   this.events[eventName].indexOf(callback);
+//                     if(indexId !==-1){
+//                         this.events[eventName].splice(indexId,1)
+//                     }
+//                     return undefined
+
+//                 }
+//            };
+
+//         };
+
+//         emit(eventName, args = [2]){
+              
+//                 if(!this.events[eventName]){
+//                         return [];
+//                 }
+
+//             const callbacks =    this.events[eventName]
+         
+//                 let result =  callbacks.map((callback) =>  callback(...args))
+//                 return result;
+//         }
+
+
+// };
+
+
+
+
+const emitter = new EventEmitter();
+
+function onClickCallback() {
+        return 99
+}
+
+ const sub = emitter.subscribe('onClick', onClickCallback);
+
+ console.log(  emitter.emit('onClick'));//[99]
+
+ console.log( sub.unsubscribe()); // undefined
+ console.log( emitter.emit('onClick')) // []

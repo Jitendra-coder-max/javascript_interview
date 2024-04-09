@@ -914,10 +914,249 @@ return {
 // num =5
 
 
-function sum( a = 11, b =6){
-return a+b;
+// function sum( a = 11, b =6){
+// return a+b;
 
-}
+// }
 
-console.log(sum(null,20))
-console.log(sum(undefined,20))
+// console.log(sum(null,20))
+// // console.log(sum(undefined,20))
+// const array = [1, 0, 0, 1, 1, 1];
+
+//    const zeroCount =   array.join('').split('1').length-1
+//    console.log(zeroCount)
+// const array = [1, 0, 0, 1,1, 1, 1];
+// const zeroCount = array.join('').split('0').length - 1;
+// console.log(zeroCount); // Output: 2
+
+
+
+
+
+// function facto(n){
+//     if(n===0){
+//         return 1
+//     }
+//     else{
+//         return n* facto(n-1) // 5*4 = 20 // 20*3
+//     }
+// }
+
+//  console.log(facto(5))
+
+
+
+// function facto(n){
+
+//     let fact = 1;
+//     for(let i = 1 ; i<=n; i++){
+//         fact= fact*i
+//     }
+//     return fact
+// }
+
+// console.log(facto(5))
+
+
+// function printNUm(start, end){
+
+//     if(start <= end){
+//         console.log(start);
+//         printNUm(start + 1, end);
+//     }
+// }
+
+// console.log(printNUm(1,10))
+
+
+// const arr = [10,23,46,32,54,98,2,34]
+
+
+// let sum = 0;
+// for(let i =0; i<arr.length; i++){
+
+//     sum = sum+ arr[i]
+// }
+
+// let average = sum/arr.length
+// console.log(average)
+
+
+    //    const average = arr.reduce((cur,acc) =>   acc+cur, 0)/arr.length
+    //    console.log(Math.floor(average))
+
+
+// function arrEqual(arr1,arr2){
+//     if(arr1.length !== arr2.length){
+//         return false;
+//     }
+
+//     // return arr1.every((val,index) => val === arr2[index])
+
+
+//     for(let i =0; i<arr1.length; i++){
+//         if(arr1[i] !== arr2[i]){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+
+
+
+
+//     console.log(arrEqual([1,2,3],[1,2,3]))
+
+// function sumDigit(num) {
+
+//    let str=  num.toString().split('')
+
+//           let sum =     str.reduce((acc,cur) => acc+ parseInt(cur), 0)
+//    return sum
+// }
+
+// function sumDigit(n){
+// let sum =0;
+// while(n !==0){
+//         let rem =   n%10
+
+//         // sum = sum+ rem
+                           
+        
+//         n = Math.floor(n/10)
+// }
+// return sum
+// }
+
+
+//  console.log( sumDigit(12345))
+
+// function revFunc(n){
+
+//     let rev = 0 ;
+//     while(n!==0){
+//         let rem = n%10 // 6,5,4
+
+//        rev = rev*10+rem // 650 
+
+//        n = Math.floor( n/10) // 
+//     }
+//     return rev;
+// }
+
+
+
+// console.log(revFunc(123456))
+
+
+
+
+// function armFunc(num){
+// let  n = num
+//    let sum = 0
+//    while(n !==0){
+
+//     let rem = n%10;
+
+//     sum = sum + Math.pow(rem,3)
+//     // sum = sum + rem**3
+
+
+//      n = Math.floor(n/10)
+//    }
+//    return sum == num
+// }
+
+
+
+// console.log(armFunc(153))
+
+// function paliFunc(num){
+
+
+//     let n = num // temp variable
+
+//     let sum = 0;
+
+//     while(n!==0){
+
+//         let rem = n%10 // extract last digits
+//      sum = sum*10+ rem // 
+
+//      n = Math.floor(n/10)
+//     }
+
+//    if(sum ===num){
+//     return ` Number is palindrome number`
+//    }
+
+//    else{
+//     return ` Not palindrome number`
+//    }
+// }
+
+//     console.log(paliFunc(123212))
+
+// let msg = "hello";
+
+// function cap(str){
+//     let newStr = str.toUpperCase();
+//    return newStr;
+// }
+//   console.log( cap((msg)))
+//   console.log(cap('mymsg'))
+// return   str.replaceAll(' ', ' 😱 ')
+// function panic(str){
+
+      
+// let newStr = str.split(' ')
+//     console.log(newStr)
+//     let result = [];
+//     for(let i = 0; i<newStr.length; i++){
+//         if(newStr[i] === ''){
+//             result.push('😱')
+//         }
+        
+//         else {
+//             result.push(newStr[i])
+          
+//         }
+//     }
+//     return result.join()
+    
+// }
+
+
+// console.log(panic("I'm almost out of coffee"));
+
+
+// function panic(str) {
+//     let newStr = str.split('');
+//     console.log(newStr)
+//     let result = [];
+//     for (let i = 0; i < newStr.length; i++) {
+//         if (newStr[i] === ' ') {
+//             result.push(' 😱 ');
+//         } else {
+//             result.push(newStr[i]);
+//         }
+//     }
+//     return result.join('');
+// }
+
+// console.log(panic("I'm almost out of coffee"));
+
+
+// function whisper(str){
+
+
+//     let newStr =      'shh...'+ str.toLowerCase()
+//     return newStr
+
+// }
+
+
+
+
+// console.log(whisper("PLEASE STOP SHOUTING."));
