@@ -1160,3 +1160,37 @@ return {
 
 
 // console.log(whisper("PLEASE STOP SHOUTING."));
+
+
+
+
+// function sumSeries(numTerms) {
+//     let sum = 0;
+//     let term = 9;
+
+//     for (let i = 0; i < numTerms; i++) {
+//         sum += term;
+//         term = term * 10 + 9; // Generating the next term (e.g., 9, 99, 999, ...)
+//     }
+
+//     return sum;
+// }
+
+// // Example usage:
+// console.log(sumSeries(5)); // Prints the sum of the first 5 terms in the series
+
+
+
+
+
+let str = 'abcdefgh'
+let count = 0;
+
+console.log( str.length)
+// for(let i =0; i<str.length; i++){
+
+//     count++
+
+// }
+
+// console.log(count)

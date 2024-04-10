@@ -53,11 +53,14 @@
 
 
 
-let str = "Hello"
+// let str = "Hello"
 
-    let newStr =         str.substring(0,1)
+//     let newStr =         str.substring(0,1)
 
-newStr
+// newStr
 
 
-    console.log(newStr)
+//     console.log(newStr)
+
+
+
