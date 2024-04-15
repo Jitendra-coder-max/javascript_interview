@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #element{
+            border: 2px solid red;
+            border-radius: 50%;
+            height: 50px;
+            width:50px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="element">
+        Hover Me
+        </div>
+    <script>
+
+        const handleMouse = () => {
+
+            ele.innerHTML= 'Hello mouse' 
+        }
+
+        const handleMouseleave = () => {
+            ele.innerHTML = ' Hover Me'
+        }
+
+  const ele = document.getElementById('element');
+
+    ele.addEventListener('mouseover',handleMouse)
+    ele.addEventListener('mouseleave',handleMouseleave)
+
+    </script>
+</body>
+</html>

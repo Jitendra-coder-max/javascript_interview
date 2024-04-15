@@ -1,0 +1,50 @@
+/* Element Selector */
+p {
+    font-size: 16px;
+}
+
+#container{
+
+    background-image: url('./glower.jpg');
+    /* background-size: cover; */
+    background-repeat:no-repeat
+}
+
+/* Class Selector */
+.highlight {
+    background-color: yellow;
+}
+
+/* ID Selector */
+#container {
+    border: 1px solid black;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    width: 200px;
+}
+
+/* Descendant Selector */
+#container li {
+    list-style-type: none;
+    background-color: aqua;
+}
+
+/* Adjacent Sibling Selector */ 
+h1 + p {  
+    font-style: italic;
+    color: red;
+}
+
+
+
+/* Pseudo-class Selector */
+button:hover {
+    background-color: lightblue;
+}
+
+/* Pseudo-element Selector */
+span::first-letter {
+    font-weight: bold;
+}
