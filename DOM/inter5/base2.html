@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#btn{
+
+    color:aliceblue;
+    background-color: greenyellow;
+    font-weight:60px;
+    border: 2px solid white;
+    border-radius:30px;
+    padding: 10px   20px;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <button id="btn">Click here</button> &nbsp;<span id="para">X</span>
+</div>
+    <script>
+
+
+// const handleClick = () => {
+//     document.getElementById('para').innerHTML= 'Y'
+// }
+//     const btnEl=  document.getElementById('btn')
+//     btnEl.addEventListener('click' ,handleClick) // CHANGING X BY CLICKING ON BUTTON
+
+
+function handleClick(){
+    document.getElementById('btn').innerHTML= 'Education'
+}
+const paraEl = document.getElementById('para')
+paraEl.addEventListener('click',handleClick)
+
+    </script>
+</body>
+</html>

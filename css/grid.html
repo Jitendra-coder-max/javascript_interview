@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Example</title>
+  <style>
+    .container {
+      display: grid; /* Set display to grid */
+      /* grid-template-columns: repeat(3, 100px);  Create 3 columns each with a width of 100px  */
+      grid-template-columns:100px 100px 100px ; 
+      grid-gap: 10px; /* Add gap between grid items */
+      /* column-gap:50px; */
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      height: 500px; /* Set container height */
+      border: 2px solid #333; /* Add border for visualization */
+    }
+
+    .item {
+      width: 100%; /* Make each item take up the entire width of its grid cell */
+      height: 100px; /* Set item height */
+      background-color: #f00; /* Set background color */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  
+</div>
+
+</body>
+</html>

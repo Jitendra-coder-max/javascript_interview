@@ -17,3 +17,19 @@
 
 
 // console.log(pair([1,2,3,6],3))
+
+
+// let arr = [12,34,65,87,54];
+
+// // arr.shift()
+// // arr.unshift(23)
+// arr.splice(0,0,2)
+// console.log(arr)
+
+
+const sum = (a,b) => {
+    return a+b
+}
+
+
+console.log(sum(1,'-2'))

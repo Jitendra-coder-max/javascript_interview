@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-2">
+        <h1 id="reg">Registration Form</h1>
+        <form id="registrationForm">
+          <div class="form-group row">
+            <div class="col">
+              <input id="username" type="text" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <input id="password" type="password" class="form-control">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <input id="confirmPassword" type="password" class="form-control">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+                <button class="btn btn-primary btn-block">
+                  Register
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Add a label to each of the input fields: username, password, confirm password -->
+      <!-- <script>
+  const labelId = document.createElement('label')
+           const userNameText = document.createTextNode('userName');
+           labelId.appendChild(userNameText)
+     const userNameid =    document.getElementById('username');
+
+     document.body.insertBefore(labelId, userNameid)
+
+      </script> -->
+
+      <!-- <script>
+        // Create a label element
+        const labelId = document.createElement('label');
+        const userNameText = document.createTextNode('userName');
+        labelId.appendChild(userNameText);
+    
+        // Get the element with the id "username"
+        const userNameid = document.getElementById('username');
+    
+        // Insert the label before the element with id "username"
+        userNameid.parentNode.insertBefore(labelId, userNameid);
+    </script> -->
+
+    <script>
+//  document.getElementById('reg').insertAdjacentHTML('afterBegin','<label for="username"> Username: </label>')
+        //  document.getElementById('username').insertAdjacentHTML('beforeBegin','<label for="username"> Username: </label>')
+        //  document.getElementById('password').insertAdjacentHTML('beforeBegin','<label for="password">Password: </label>')
+        //  document.getElementById('confirmPassword').insertAdjacentHTML('beforeBegin', '<label for="confirmPassword"> Confirm Password<label>')
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div id="para"> Lorem ipsum</div>
+    <script>
+
+    const paraEl = document.createElement('p')
+       const paraText =    document.createTextNode('paragraph text')
+        paraEl.appendChild(paraText)
+      const paraWeb =  document.getElementById('para')
+      paraWeb.appendChild(paraEl)
+    //   paraWeb.removeChild(paraEl)
+    </script>
+    
+</body>
+</html>
