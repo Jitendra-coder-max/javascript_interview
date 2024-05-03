@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo">text</p>
+
+    <script>
+
+
+
+            const person = {
+                name:'jit',
+                age:25,
+                degree: 'BE'
+            }
+
+
+            delete person.name
+
+          let text = ''
+          for(let key in person){
+
+            text += person[key];
+          }
+
+          
+          document.getElementById('demo').innerHTML = text
+
+
+    </script>
+    
+</body>
+</html>
